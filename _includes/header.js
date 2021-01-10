@@ -18,7 +18,7 @@ export default function Header() {
             <div className="d-flex flex-column align-items-center">
               <div className="d-fex row justify-content-center w-100">
                 <Profile name="Gómez Morales Pablo Arturo" img="/images/profile1.jpg"/>
-                <Profile name="Hernández Díaz Kevin Daniel" img="/images/header_alt.jpg"/>
+                <Profile name="Hernández Díaz Kevin Daniel" img="/images/profile2.jpeg"/>
               </div>
               <button type="button" className="btn btn-lg btn-primary" style={{marginTop: '3rem'}}>Empezar</button>
             </div>

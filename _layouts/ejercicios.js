@@ -16,7 +16,7 @@ export default function LayoutEjercicios({title, children}) {
               <h3 className="px-3 mb-5">{title}</h3>
               <nav className="nav nav-pills flex-column">
                 <a href="#reglas" className="nav-link active">Introducción</a>
-                <a href="#ejercicio1" className="nav-link">Ejercicio1</a>
+                <a href="#ejercicio1" className="nav-link" onClick={(e) => e.preventDefault()}>Ejercicio1</a>
                 <a href="#ejercicio2" className="nav-link">Ejercicio2</a>
                 <a href="#ejercicio3" className="nav-link">Ejercicio3</a>
                 <a href="#ejercicio4" className="nav-link">Ejercicio4</a>
