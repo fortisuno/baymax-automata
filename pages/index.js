@@ -1,65 +1,34 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import LayoutHome from '@layouts/home'
+import React from 'react'
+import CardTema from '@components/card-tema'
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+    <LayoutHome>
+      <div className="col-12 text-center mb-5">
+          <h1>¿Que tema practicaremos hoy?</h1>
         </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
-    </div>
+        <div className="col-md-4 mb-4">
+          <CardTema
+            tema="Parablas Agudas"
+            descripcion="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate magni sapiente voluptate natus animi tempore!"
+            path="/ejercicios/palabras-agudas"
+          />
+        </div>
+        <div className="col-md-4 mb-4">
+          <CardTema
+            tema="Parablas Graves"
+            descripcion="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate magni sapiente voluptate natus animi tempore!"
+            path="/ejercicios/palabras-graves"
+          />
+        </div>
+        <div className="col-md-4 mb-4">
+          <CardTema
+            tema="Parablas Esdrújulas"
+            descripcion="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate magni sapiente voluptate natus animi tempore!"
+            path="/ejercicios/palabras-esdrujulas"
+          />
+        </div>
+    </LayoutHome>
   )
 }

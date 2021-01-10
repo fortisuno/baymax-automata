@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
+
+$font-family-sans-serif: 'Montserrat', sans-serif;
+$breadcrumb-padding-x: 0;
+$breadcrumb-bg: #ffffff;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+
+@import "./components/cards";
+
+@import "./includes/header";
+@import "./includes/footer";
+
+@import "./layouts/home";
+@import "./layouts/ejercicios";
