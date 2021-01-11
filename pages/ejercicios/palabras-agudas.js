@@ -42,7 +42,7 @@ export default function PalabrasAgudas() {
     <LayoutEjercicios title="Palabra Agudas">
       <SectionEjercicios title="Introducción" id="introduccion">
         <p className="lead">
-        Las palabras agudas son las que llevan acento (la intensidad de la voz) en la última sílaba. Importante destacar que no todas las palabras agudas llevan acento ortográfico (tilde).
+          Las palabras agudas son las que llevan acento (la intensidad de la voz) en la última sílaba. Importante destacar que no todas las palabras agudas llevan acento ortográfico (tilde).
         </p>
         <p className="lead">
           Las palabras agudas llevan tilde si <b>terminan en vocal</b>: Perú, sofá, café, rubí, menú, marroquí, bebé.
