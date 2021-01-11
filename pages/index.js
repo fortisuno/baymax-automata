@@ -5,7 +5,7 @@ import CardTema from '@components/card-tema'
 export default function Home() {
   return (
     <LayoutHome>
-      <div className="col-12 text-center mb-5">
+      <div className="col-12 text-center" style={{marginBottom: '5rem'}}>
           <h1>¿Que tema practicaremos hoy?</h1>
         </div>
         <div className="col-md-4 mb-4">

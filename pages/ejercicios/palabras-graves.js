@@ -40,29 +40,29 @@ export default function PalabrasGraves() {
 
   return (
     <LayoutEjercicios title="Palabra Graves">
-      <SectionEjercicios title="Introducción">
+      <SectionEjercicios title="Introducción" id="introduccion">
         <p className="text-justify">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio officiis odio a deserunt, accusantium provident omnis laborum mollitia vero rem qui ipsum voluptatibus? Sunt ab eveniet eum maiores aperiam officia obcaecati voluptates sit impedit blanditiis ullam molestias cupiditate fugit voluptatibus repudiandae recusandae, esse velit laborum consectetur! Ad, voluptates quo maiores ab voluptatem provident, itaque quos voluptatum fugiat non atque, ea illum ipsam! Odio corrupti dolorem laboriosam in. Esse alias vel maiores molestias amet, earum enim nostrum officia repellendus dolor! Accusantium repellendus nisi nemo suscipit, vel, explicabo quas voluptas qui molestias quaerat sed illo autem ex, et praesentium quisquam tempora. At.
         </p>
       </SectionEjercicios>
-      <SectionEjercicios title="Ejercicio 1">
-        <span className="lead">Con las siguientes silabas, forma la palabra adecuada. <b>Pista:</b> Es lo que cantan los artistas:</span>
-        <Word group="ejercicio1"/>
+      <SectionEjercicios title="Ejercicio 1" id="ejercicio1">
+        <span className="lead">Con las siguientes silabas, forma la palabra adecuada. <b>Pista:</b> ¿Qué idioma hablan en Portugal?</span>
+        <Word group="ejercicio1" id="respuesta-ejercicio1"/>
         <Syllables group="ejercicio1" list={ejercicio1}/>
       </SectionEjercicios>
-      <SectionEjercicios title="Ejercicio 2">
-        <span className="lead">Con las siguientes silabas, forma la palabra adecuada. <b>Pista:</b> Es lo que cantan los artistas:</span>
-        <Word group="ejercicio2"/>
+      <SectionEjercicios title="Ejercicio 2" id="ejercicio2">
+        <span className="lead">Con las siguientes silabas, forma la palabra adecuada. <b>Pista:</b> Disney hizo la pelicula de El Rey...</span>
+        <Word group="ejercicio2" id="respuesta-ejercicio2"/>
         <Syllables group="ejercicio2" list={ejercicio2}/>
       </SectionEjercicios>
-      <SectionEjercicios title="Ejercicio 3">
-        <span className="lead">Con las siguientes silabas, forma la palabra adecuada. <b>Pista:</b> Es lo que cantan los artistas:</span>
-        <Word group="ejercicio3"/>
+      <SectionEjercicios title="Ejercicio 3" id="ejercicio3">
+        <span className="lead">Con las siguientes silabas, forma la palabra adecuada. <b>Pista:</b> Mi hermana ... todos mis dulces.</span>
+        <Word group="ejercicio3" id="respuesta-ejercicio3"/>
         <Syllables group="ejercicio3" list={ejercicio3}/>
       </SectionEjercicios>
-      <SectionEjercicios title="Ejercicio 4">
-        <span className="lead">Con las siguientes silabas, forma la palabra adecuada. <b>Pista:</b> Es lo que cantan los artistas:</span>
-        <Word group="ejercicio4"/>
+      <SectionEjercicios title="Ejercicio 4" id="ejercicio4">
+        <span className="lead">Con las siguientes silabas, forma la palabra adecuada. <b>Pista:</b> Escribir bien, muestra una buena...</span>
+        <Word group="ejercicio4" id="respuesta-ejercicio4"/>
         <Syllables group="ejercicio4" list={ejercicio4}/>
       </SectionEjercicios>
     </LayoutEjercicios>

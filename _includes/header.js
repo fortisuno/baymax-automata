@@ -20,7 +20,7 @@ export default function Header() {
                 <Profile name="Gómez Morales Pablo Arturo" img="/images/profile1.jpg"/>
                 <Profile name="Hernández Díaz Kevin Daniel" img="/images/profile2.jpeg"/>
               </div>
-              <button type="button" className="btn btn-lg btn-primary" style={{marginTop: '3rem'}}>Empezar</button>
+              <a href="#ejercicios" className="btn btn-lg btn-primary" style={{marginTop: '3rem'}}>Empezar</a>
             </div>
           </div>
         </div>

@@ -5,6 +5,7 @@ import Word from '@components/word'
 import Syllables from '@components/syllables'
 
 export default function PalabrasAgudas() {
+  const regExp = /^([a-zA-Z]+([áéíóú]|[áéíóú][nNsS]))$|^([a-zA-Z]{2}[áéíóú][a-zA-Z])$/
   const ejercicio1 = [
     {id: 1, value:'Por'},
     {id: 2, value:'Pór'},
@@ -26,8 +27,8 @@ export default function PalabrasAgudas() {
     {id: 4, value:'mio'},
   ]
   const ejercicio4 = [
-    {id: 1, value:'E'},
-    {id: 2, value:'É'},
+    {id: 1, value:'e'},
+    {id: 2, value:'é'},
     {id: 3, value:'du'},
     {id: 4, value:'dú'},
     {id: 5, value:'ca'},
@@ -39,29 +40,38 @@ export default function PalabrasAgudas() {
   
   return (
     <LayoutEjercicios title="Palabra Agudas">
-      <SectionEjercicios title="Introducción">
-        <p className="text-justify">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio officiis odio a deserunt, accusantium provident omnis laborum mollitia vero rem qui ipsum voluptatibus? Sunt ab eveniet eum maiores aperiam officia obcaecati voluptates sit impedit blanditiis ullam molestias cupiditate fugit voluptatibus repudiandae recusandae, esse velit laborum consectetur! Ad, voluptates quo maiores ab voluptatem provident, itaque quos voluptatum fugiat non atque, ea illum ipsam! Odio corrupti dolorem laboriosam in. Esse alias vel maiores molestias amet, earum enim nostrum officia repellendus dolor! Accusantium repellendus nisi nemo suscipit, vel, explicabo quas voluptas qui molestias quaerat sed illo autem ex, et praesentium quisquam tempora. At.
+      <SectionEjercicios title="Introducción" id="introduccion">
+        <p className="lead">
+        Las palabras agudas son las que llevan acento (la intensidad de la voz) en la última sílaba. Importante destacar que no todas las palabras agudas llevan acento ortográfico (tilde).
+        </p>
+        <p className="lead">
+          Las palabras agudas llevan tilde si <b>terminan en vocal</b>: Perú, sofá, café, rubí, menú, marroquí, bebé.
+        </p>
+        <p className="lead">
+          Las palabras agudas llevan tilde si <b>terminan en N o S</b>: también, algún, jamás, según, sillón, además, organización, capitán, alemán, anís, canción.
+        </p>
+        <p className="lead">
+          Hay palabras agudas que tienen tilde a pesar de NO terminar en vocal, N o S. <b>Esto es por la ruptura del diptongo</b>: Raúl, baúl, raíz, maíz.
         </p>
       </SectionEjercicios>
-      <SectionEjercicios title="Ejercicio 1">
+      <SectionEjercicios title="Ejercicio 1" id="ejercicio1">
         <span className="lead">Con las siguientes silabas, forma la palabra adecuada. <b>Pista:</b> ¿Qué idioma hablan en Portugal?</span>
-        <Word group="ejercicio1"/>
+        <Word group="ejercicio1" id="respuesta-ejercicio1" regExp={regExp} resp="Portugués"/>
         <Syllables group="ejercicio1" list={ejercicio1}/>
       </SectionEjercicios>
-      <SectionEjercicios title="Ejercicio 2">
+      <SectionEjercicios title="Ejercicio 2" id="ejercicio2">
         <span className="lead">Con las siguientes silabas, forma la palabra adecuada. <b>Pista:</b> Disney hizo la pelicula de El Rey...</span>
-        <Word group="ejercicio2"/>
+        <Word group="ejercicio2" id="respuesta-ejercicio2" regExp={regExp} resp="León"/>
         <Syllables group="ejercicio2" list={ejercicio2}/>
       </SectionEjercicios>
-      <SectionEjercicios title="Ejercicio 3">
+      <SectionEjercicios title="Ejercicio 3" id="ejercicio3">
         <span className="lead">Con las siguientes silabas, forma la palabra adecuada. <b>Pista:</b> Mi hermana ... todos mis dulces.</span>
-        <Word group="ejercicio3"/>
+        <Word group="ejercicio3" id="respuesta-ejercicio3" regExp={regExp} resp="comió"/>
         <Syllables group="ejercicio3" list={ejercicio3}/>
       </SectionEjercicios>
-      <SectionEjercicios title="Ejercicio 4">
+      <SectionEjercicios title="Ejercicio 4" id="ejercicio4">
         <span className="lead">Con las siguientes silabas, forma la palabra adecuada. <b>Pista:</b> Escribir bien, muestra una buena...</span>
-        <Word group="ejercicio4"/>
+        <Word group="ejercicio4" id="respuesta-ejercicio4" regExp={regExp} resp="educación"/>
         <Syllables group="ejercicio4" list={ejercicio4}/>
       </SectionEjercicios>
     </LayoutEjercicios>

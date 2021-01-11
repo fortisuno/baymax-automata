@@ -4,7 +4,7 @@ export default function FooterEjercicios() {
   return (
     <Fragment>
       <hr/>
-      <footer className="row">
+      <footer className="row mb-5">
         <div className="col">
           <ol className="breadcrumb bg-white">
             <li className="breadcrumb-item">IPN</li>

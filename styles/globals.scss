@@ -6,6 +6,14 @@ $breadcrumb-bg: #ffffff;
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
+.box-shadow {
+  box-shadow: $box-shadow-sm;
+  transition: box-shadow 250ms ease;
+  &:hover {
+    box-shadow: $box-shadow;
+  }
+}
+
 
 @import "./components/cards";
 
