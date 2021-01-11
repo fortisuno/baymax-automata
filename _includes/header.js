@@ -1,14 +1,21 @@
 import React from 'react'
 import Profile from '@components/profile'
+import { gsap } from "gsap/dist/gsap";
+import { ScrollToPlugin } from "gsap/dist/ScrollToPlugin";
+
+gsap.registerPlugin(ScrollToPlugin);
+
 
 export default function Header() {
+
   return (
-    <header className="header-home bg-dark text-white" style={{
-      background: 'url("/images/header.jpg")',
+    <header className="header-home bg-dark text-dark" id="header-home" style={{
+      background: 'url("/images/header_alt.jpg")',
       backgroundPosition: 'center',
-      backgroundSize: 'cover'
+      backgroundSize: 'cover',
+      backgroundAttachment: 'fixed'
     }}>
-      <div className="container-fluid" style={{background: 'rgba(0,0,0,0.1)'}}>
+      <div className="container-fluid" style={{background: 'rgba(0,0,0,0)'}}>
         <div className="row vh-100 py-5 align-content-center text-center">
           <div className="col">
             <div style={{marginBottom: '5rem'}}>

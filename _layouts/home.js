@@ -10,7 +10,7 @@ export default function LayoutHome({children}) {
         <title>Inicio</title>
       </Head>
       <Header/>
-      <div className="container">
+      <div className="container" id="ejercicios">
         <div className="row py-5 vh-100 align-content-center position-relative">
           {children}
           <FooterHome/>
