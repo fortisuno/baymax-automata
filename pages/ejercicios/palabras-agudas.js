@@ -5,7 +5,11 @@ import Word from '@components/word'
 import Syllables from '@components/syllables'
 
 export default function PalabrasAgudas() {
-  const regExp = /^([a-zA-Z]+([áéíóú]|[áéíóú][nNsS]))$|^([a-zA-Z]{2}[áéíóú][a-zA-Z])$/
+  const regExp = {
+    stressed: /^[a-zA-Z]{0,2}[áéíóú][nNsS]?$/,
+    noStressed: /^[a-zA-Z]+$/,
+    last: /^[a-zA-Z]{0,2}[áéíóú][a-zA-Z]?$/
+  }
   const ejercicio1 = [
     {id: 1, value:'Por'},
     {id: 2, value:'Pór'},
@@ -56,22 +60,22 @@ export default function PalabrasAgudas() {
       </SectionEjercicios>
       <SectionEjercicios title="Ejercicio 1" id="ejercicio1">
         <span className="lead">Con las siguientes silabas, forma la palabra adecuada. <b>Pista:</b> ¿Qué idioma hablan en Portugal?</span>
-        <Word group="ejercicio1" id="respuesta-ejercicio1" regExp={regExp} resp="Portugués"/>
+        <Word group="ejercicio1" id="respuesta-ejercicio1" pivote={1} regExp={regExp} answer="Portugués"/>
         <Syllables group="ejercicio1" list={ejercicio1}/>
       </SectionEjercicios>
       <SectionEjercicios title="Ejercicio 2" id="ejercicio2">
         <span className="lead">Con las siguientes silabas, forma la palabra adecuada. <b>Pista:</b> Disney hizo la pelicula de El Rey...</span>
-        <Word group="ejercicio2" id="respuesta-ejercicio2" regExp={regExp} resp="León"/>
+        <Word group="ejercicio2" id="respuesta-ejercicio2" pivote={1} regExp={regExp} answer="León"/>
         <Syllables group="ejercicio2" list={ejercicio2}/>
       </SectionEjercicios>
       <SectionEjercicios title="Ejercicio 3" id="ejercicio3">
         <span className="lead">Con las siguientes silabas, forma la palabra adecuada. <b>Pista:</b> Mi hermana ... todos mis dulces.</span>
-        <Word group="ejercicio3" id="respuesta-ejercicio3" regExp={regExp} resp="comió"/>
+        <Word group="ejercicio3" id="respuesta-ejercicio3" pivote={1} regExp={regExp} answer="comió"/>
         <Syllables group="ejercicio3" list={ejercicio3}/>
       </SectionEjercicios>
       <SectionEjercicios title="Ejercicio 4" id="ejercicio4">
         <span className="lead">Con las siguientes silabas, forma la palabra adecuada. <b>Pista:</b> Escribir bien, muestra una buena...</span>
-        <Word group="ejercicio4" id="respuesta-ejercicio4" regExp={regExp} resp="educación"/>
+        <Word group="ejercicio4" id="respuesta-ejercicio4" pivote={1} regExp={regExp} answer="educación"/>
         <Syllables group="ejercicio4" list={ejercicio4}/>
       </SectionEjercicios>
     </LayoutEjercicios>
